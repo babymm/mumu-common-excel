@@ -1,4 +1,4 @@
-package com.lovecws.mumu.common.excel.beans;
+package com.lovecws.mumu.excel.beans;
 
 /**
  * excel 类型

@@ -1,6 +1,6 @@
-package com.lovecws.mumu.common.excel.parser;
+package com.lovecws.mumu.excel.parser;
 
-import com.lovecws.mumu.common.excel.beans.ExcelParserBean;
+import com.lovecws.mumu.excel.beans.ExcelParserBean;
 
 import java.io.IOException;
 import java.io.InputStream;

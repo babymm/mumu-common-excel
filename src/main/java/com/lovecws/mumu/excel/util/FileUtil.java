@@ -1,4 +1,4 @@
-package com.lovecws.mumu.common.excel.util;
+package com.lovecws.mumu.excel.util;
 
 public class FileUtil {
 

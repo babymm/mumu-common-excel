@@ -1,8 +1,8 @@
-package com.lovecws.mumu.common.excel.generater;
+package com.lovecws.mumu.excel.generater;
 
-import com.lovecws.mumu.common.excel.beans.ExcelGeneraterBean;
-import com.lovecws.mumu.common.excel.beans.ExcelTypeEnum;
-import com.lovecws.mumu.common.excel.util.FileUtil;
+import com.lovecws.mumu.excel.beans.ExcelGeneraterBean;
+import com.lovecws.mumu.excel.beans.ExcelTypeEnum;
+import com.lovecws.mumu.excel.util.FileUtil;
 import org.apache.poi.hssf.usermodel.*;
 import org.apache.poi.ss.SpreadsheetVersion;
 import org.apache.poi.ss.usermodel.*;
@@ -22,7 +22,7 @@ import java.util.List;
 public class ExcelGenerater implements Generater{
 	
 	@Override
-	public ExcelGeneraterBean create(String sheetName,List<String> headers,List<List<Object>> data){
+	public ExcelGeneraterBean create(String sheetName, List<String> headers, List<List<Object>> data){
 		return create(sheetName, headers, data, ExcelGeneraterBean.DEFAULT_PAGE_SIZE);
 	}
 	

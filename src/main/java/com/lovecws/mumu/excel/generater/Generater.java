@@ -1,6 +1,6 @@
-package com.lovecws.mumu.common.excel.generater;
+package com.lovecws.mumu.excel.generater;
 
-import com.lovecws.mumu.common.excel.beans.ExcelGeneraterBean;
+import com.lovecws.mumu.excel.beans.ExcelGeneraterBean;
 
 import java.util.List;
 

@@ -1,24 +1,25 @@
-package com.lovecws.mumu.common.excel;
+package com.lovecws.mumu.excel;
 
-import com.lovecws.mumu.common.excel.beans.ExcelParserBean;
-import com.lovecws.mumu.common.excel.parser.ExcelParser;
+import com.lovecws.mumu.excel.beans.ExcelParserBean;
+import com.lovecws.mumu.excel.parser.ExcelParser;
 import org.junit.Test;
 
 import java.io.IOException;
 import java.util.List;
 
-public class XLSExcelParserDemo {
+public class XLSExcelParserTest {
 
 	@Test
 	public void parser(){
 		ExcelParser parser=new ExcelParser();
 		try {
-			ExcelParserBean excelParserBean = parser.parser("D:\\crawler4j\\carnews\\20170321092615.xls");
+			ExcelParserBean excelParserBean = parser.parser(XLSExcelParserTest.class.getResource("/").getPath() + "xls.xls");
 			//System.out.println(excelParserBean);
 			for (List<Object> list : excelParserBean.getData()) {
 				for (Object object : list) {
-					System.out.print(object);
+					System.out.print(object + "\t");
 				}
+				System.out.println();
 			}
 			
 		} catch (IOException e) {
